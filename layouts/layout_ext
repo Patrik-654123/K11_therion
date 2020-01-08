@@ -1,0 +1,62 @@
+encoding  utf-8
+
+layout my_layout_ext
+  map-comment "Objavili a preskúmali členovia speleoklubov Červené vrchy, Banská Bystrica, Detva, Drienka, SpeleoTuriec, Nicolaus, Šariš, UK Bratislava (Slovensko), Speleološko Društvo Peoni (Macedónsko) a Speleoklub Tatrzański  (Polsko)
+#  map-comment "Discovered and explored by members of speleo clubs Červené vrchy, Banská Bystrica, Detva, Drienka,SpeleoTuriec, Nicolaus, Šariš, UK Bratislava (Slovakia), Speleološko Društvo Peoni (Macedonia) and Speleoklub Tatrzański (Poland)
+overlap 20 cm
+  scale 1 500
+base-scale 1 200
+
+#% default values depend on scale; for 1:200 they are 7,8,10,12,14
+code metapost
+        fonts_setup(6,8,10,14,90);
+endcode
+
+#  rotate 90
+#  origin 13 22 0 m
+#  origin-label 100 K
+#  exclude-pages on 1,2,5
+ # color map-bg [60 100 80] #zelenkavá
+ #  color map-bg [65 55 40] #hnedá
+  transparency on
+  surface bottom
+  surface-opacity 80
+#  opacity 90  
+  language sk
+#  statistics topo-length on
+#  statistics explo-length on
+ legend on
+#  legend-width .18 m
+#  map-header-bg on
+ map-header 5 85 center
+  grid bottom 
+ # grid-size 50 50 50 m
+ # grid-origin 0 0 0 m
+  grid-coords all #border
+  layers off
+  symbol-assign point station:temporary SKBB
+  debug station-names
+  
+  symbol-color area water [0 0 100]
+  symbol-color area sump  [0 0 100] 
+  symbol-color line water-flow [0 0 100]
+  symbol-color point water-flow [0 0 100]
+
+  code metapost
+  def a_water (expr p) =
+    T:=identity;
+    thfill p withcolor (0.0, 0.5, 1.0);
+  enddef;
+
+
+#code metapost
+# def s_northarrow (expr rot) =
+#   T:=identity scaled 1.5 rotated -rot;
+#   thdraw (-.5cm,-1cm)--(0,1.5cm)--(.5cm,-1cm)--(0,-.5cm)--cycle;
+#   thfill (-.5cm,-1cm)--(0,1.5cm)--(0,-.5cm)--cycle;
+ #enddef;
+#endcode
+
+
+
+endlayout

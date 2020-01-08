@@ -1,0 +1,36 @@
+encoding  utf-8
+
+source data/K11.th
+
+input layouts/layout_plan_1000
+#input layouts/layout_ext_2000
+
+select K11
+#select map_k11_plan.map@K11 #celá mapa
+#select imrich.map@K11
+#select  map_K11_ext.map@K11
+
+#select k11_16_20140909_ppokrievka_ext.map@K11
+
+#select K11_09_plan
+#select K12_plan_smoll@K11
+
+#export atlas -o ./output/K11_atlas_2015.pdf -layout-page-setup 29.7 42.0 28.7 51.0 0.5 .5 cm -layout-exclude-pages on 7,9,10,12,13,15,16,19,20,23,24,28,31,32,35,37,38,45,51,56,57,59,60,63,66-68,71
+ # paper-width,
+#paper-height, page-width, page-height, left-margin and top-margin. If not specified, it
+#will be computed from size and overlap (A; default: 21 29.7 20 28.7 0.5 0.5 cm)
+#
+#export map -projection extended -o output/k11_2014_ext.pdf -layout-debug station-names -layout-map-image 100 0 nw ./output/k11_20150912_plan.pdf 
+export map -o output/k11_debug.pdf -layout-debug station-names -layout-survey-level 2
+export map -o output/k11_20180302_planbw.pdf -layout my_layout_1000 -layout-map-image 0 90 sw ./output/k11_20141009_ext.pdf # -layout-language sk #-layout-color map-fg scrap -layout-debug scrap-names #
+#export map -o output/k11_debug.xvi
+#export map -projection extended -o output/k11_20141009_ext.pdf -layout my_layout_ext_1000 #-layout-language sk #-layout-debug on
+#export map -o output/k11_cont.pdf -layout continuations #-layout-debug on
+#export continuation-list -o output/continuations_2.html
+
+#export model -o output/k11_29_08_2019.lox -wall-source all
+
+#export map -fmt kml -output output/k11_2017_model.kml 
+#export model -fmt kml -output output/k11_2017_mapa.kml -wall-source all
+#export database -format sql -o output/k11.sql
+#export model -o ./output/k11_2017.3d

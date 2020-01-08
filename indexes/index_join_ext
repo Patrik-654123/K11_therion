@@ -1,0 +1,33 @@
+encoding  utf-8
+join K11_ext_s1 K11_ext_s2
+join K11_ext_s2 K11_ext_s3
+join K11_ext_s3 K11_ext_s4_02
+join K11_ext_s4_02 K11_ext_s4_01b
+join K11_ext_s4_01b K11_ext_s4_01a
+join K11_05_ext_S1 K11_ext_s4_01a
+join K11_ext_s7_01 K11_ext_s7_02
+join K11_ext_s7_02 K11_ext_s7_03
+join K11_ext_s7_03 K11_ext_s7_04
+join K11_ext_s7_04 K11_06_im_ext
+join K11_05_ext_L1:5 K11_06_ext_L2:end
+join K11_05_ext_L2:2 K11_06_ext_L1:0
+join K11_05_ext_S1 K11_11_ext_im_1 -count 2
+join K11_10_ext_im_1 K11_09_ext_s1
+join K11_12_smoll_ext_s1 K11_ext_s7_02
+join K11_12_smoll_ext_s4 K11_12_smoll_ext_s1
+join K11_12_smoll_ext_s2 K11_12_smoll_ext_s4
+join K11_08_hol_ext_s1 K11_08_hol_ext_s1a 
+join K11_08_hol_ext_s1 K11_08_hol_ext_s2 
+join K11_08_hol_ext_s2 K11_08_hol_ext_s3
+join K11_08_hol_ext_s3 K11_08_hol_ext_s4
+join K11_08_hol_ext_s5a K11_08_hol_ext_s5
+join K11_08_hol_ext_s4 K11_10_ext_im_1
+join K11_08_hol_ext_s4 K11_10_ext_im_2
+join K11_ext_s7_01 K11_08_hol_ext_s1a
+join K11_09_ext_s1 slovB_1
+join K11_12_smoll_ext_s3 K11_13_planki_ext_s1
+join k11_15_ext_s1 K11_05_ext_S1
+join im17_ext1 K11_08_hol_ext_s1
+join im17_ext1 scrap1
+join scrap1 k11_19_hercut_ext_s1
+

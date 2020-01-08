@@ -1,0 +1,38 @@
+encoding  utf-8
+
+survey K11_14
+centerline
+date 2012.8.29
+
+#SAP, DistoX ako pasmo :)
+units tape cm
+team "Libor Štubňa" pictures
+team "Pavel Herich" instruments
+
+explo-date 2012.8.29 
+explo-team "Libor Štubňa" #Speleoklub Banská Bystrica
+explo-team "Pavel Herich" #Speleoklub Demänovská dolina
+
+
+#4SP bod Herich equate 4 ámoll
+
+data normal from to compass clino tape right left up down
+
+extend right
+0 1 292.6 13.6 1401 [2 5.5] [1.5 7] [3 5.4] [2 1.8]
+   1    2 354   -22   1860     4   14.5 14    1.3
+   2    3 335    49.5 1900     0.1  0.8 12    3  
+   3    4 319     1   558     2.5  0    9.5  1  
+   4    5  21     9   631     0.4  1   10.5  0  
+   5    6 238    62   143     6.5  0   10    1  
+   6    7 357.5  21.3 854     1    5.2  6.5  1.4
+   7    8 325.5   9   2276     1.8  1   2    1.6  #up 11
+   8    9  52    77   627     0    1    1   2     #down 14
+   9   10 320    26   264     0.3  0.2  0.1  1.2
+  10   11 306.5 -48   1491     4.3  1    7.5  1  
+  extend left
+  11   4SP 115.5  -5.5 518     1    1    8    1  
+
+endcentreline
+endsurvey
+

@@ -1,0 +1,73 @@
+encoding  utf-8
+survey K11
+
+input K11_01_szunyog_071009.th
+input K11_02_szunyog_080907.th
+input K11_03_szunyog_071012.th
+input K11_03_szunyog_080908.th
+input K11_04_szunyog_080909.th
+#input  K11_05_holubek_080910.th
+#input  K11_06_imrich_080910.th
+#input  K11_07_szunyog_080911.th
+
+input K11_01.th2
+input K11_02.th2
+input K11_03_2007.th2
+input K11_03.th2
+input K11_04_02.th2
+input K11_04_01.th2
+
+input K11_ext_01.th2
+input K11_ext_02.th2
+input K11_ext_03_2007.th2
+input K11_ext_03.th2
+input K11_ext_04_02.th2
+input K11_ext_04_01b.th2
+input K11_ext_04_01a.th2
+
+equate 10@K11_01 10@K11_02
+equate 14@K11_02 14@K11_03_2007
+equate 7@K11_03 14@K11_02
+equate 1@K11_03 21@K11_04
+
+#equate 1@K11_04 38@K11_05
+#equate 5@K11_05 5ph@K11_06
+#equate 31@K11_06 39@K11_07
+
+join K11_s1 K11_s2
+join K11_s2 K11_s4_2007
+join K11_s3 K11_s3_2007
+join K11_s3 K11_s4_02
+join K11_s4_02 K11_s4_01
+
+join K11_ext_s1 K11_ext_s2
+join K11_ext_s2 K11_ext_s3
+join K11_ext_s3 K11_ext_s4_02
+join K11_ext_s4_02 K11_ext_s4_01b
+join K11_ext_s4_01b K11_ext_s4_01a
+
+map K11_plan
+  K11_s1
+  K11_s2
+  K11_s4_2007
+    break  
+  K11_s3
+    break
+  K11_s3_2007
+  K11_s4_02
+  K11_s4_01  
+endmap
+
+map K11_extend
+  K11_ext_s1
+  K11_ext_s2
+  K11_ext_s3
+#    break
+#  K11_ext_s3_2007
+  K11_ext_s4_02
+  K11_ext_s4_01b
+  K11_ext_s4_01a
+endmap
+
+endsurvey
+

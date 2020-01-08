@@ -1,0 +1,6 @@
+encoding  utf-8
+
+source ./data/k11_15_pokr_120831.th
+
+export map -projection extended -o ./output/k11_15_pokr_ext_120831.xvi
+export map -projection plan -o ./output/k11_15_pokr_plan_120831.xvi

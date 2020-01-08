@@ -1,0 +1,18 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 2529.57 3612.245
+##XTHERION## xth_me_area_zoom_to 25
+##XTHERION## xth_me_image_insert {1929.13 1 1.0} {334.65 1} ../output/holubek.xvi 0 {}
+
+
+
+scrap scrap1 -scale [1866.0 -3091.5 1900.0 -3090.5 0.0 0.0 1. 0.0 m]
+
+point 1879.92 425.2 station -name 3
+
+point 1858.07 357.68 station -name 2
+
+point 1929.13 334.65 station -name 1
+
+endscrap
+
+

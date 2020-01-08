@@ -1,0 +1,28 @@
+encoding  utf-8
+#source data/k11_12_smoll_110901.th
+source data/k11_08_holubek_110829.th
+
+layout holub
+
+debug station-names
+color map-fg 70
+grid top
+grid-size 1 1 1 m
+sketches on
+
+endlayout
+
+layout holub_ext
+
+debug station-names
+color map-fg 70
+grid top
+grid-size 1 1 1 m
+
+endlayout
+
+#export map -projection extended -o output/smoll_podklad_ext_20110901.pdf  -layout holub
+export map -projection extended -o output/holubek_2011_ext.xvi -layout holub_ext
+#export map -o output/smoll_podklad_20110901.pdf  -layout holub
+
+#export map.pdf -layout-color map-fg 50 -layout-scale 1 500

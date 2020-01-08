@@ -1,0 +1,35 @@
+encoding  utf-8
+survey K11_13
+
+centerline
+date 2012.09.01
+team "Michal Plankenbucher" pictures
+team "Erik Kapucian" instruments
+
+#explo-date # objavene 2008 
+explo-team "Erik Kapucian" 
+explo-team "Michal Plankenbucher" 
+
+#distox 360
+
+infer plumbs on
+extend right
+
+units length m
+
+#zaciatok: Smoll2011 bod 43
+#Chodba končí závalom s pulzným  prievanom cez ktorý preteká voda. 
+#Je potrebné rozbit jeden kamen v strede aby sa dal rozobrať.
+
+
+data normal from to compass length clino right left up down
+    extend left
+    39smol_12 50kp 140     12.1  51   1.21 2.33 0     1.5
+    50kp   51   130      6.9  39   0    0.7  0.8  2.4
+      51   52   160      3.4  40   0.86 0.36 0    2.5
+      52   53   160      2.2  23   0    0.74 1.25 2.44
+      53   54   230      2.2   4   0    0.82 1.2  1.29
+      54   55   170      2.5  27   0.59 0.78 0.36 0.48
+
+endcenterline
+endsurvey

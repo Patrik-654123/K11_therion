@@ -1,0 +1,27 @@
+encoding  utf-8
+equate 10@K11_01 10@K11_02
+equate 14@K11_02 14@K11_03_2007
+equate 7@K11_03 14@K11_02
+equate 1@K11_03 21@K11_04
+equate 1@K11_04 38@K11_05
+equate 5@K11_05 5ph@K11_06
+equate 31@K11_06 39@K11_07
+equate 2@K11_07 2sz_07@K11_08
+equate 43@K11_08 ph43@K11_10 
+equate imr5@K11_09 5@K11_10
+equate im_2008_9@K11_11 9@K11_06
+equate im_2008_2@K11_11 2@K11_06
+equate hol_2008_12@K11_11 12@K11_05
+equate hol_2008_13@K11_11 13@K11_05
+equate sz_2008_20@K11_12 20@K11_07
+equate 4@K11_09 4SP@K11_14
+equate 39@K11_12 39smol_12@K11_13 
+equate 32@K11_05 32@K11_15
+equate 13@k11_20140909 1@K11_14
+equate 1@k11_17_imrich 11@K11_08
+equate 10@k11_17_imrich 0@K11_18_pokrievka
+equate 39@K11_18_pokrievka 39@K11_19_hercut
+
+#equate 39@K11_18_pokrievka 39@K11_19_pokrievka
+#equate 43@K11_20_pokrievka 43@K11_19_pokrievka
+

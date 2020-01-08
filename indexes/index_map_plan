@@ -1,0 +1,121 @@
+encoding  utf-8
+map K11_plan_szunyog.map
+  K11_s1
+  K11_s2
+  K11_s4_2007
+    break  
+  K11_s3
+    break
+  K11_s3_2007
+  K11_s4_02
+  K11_s4_01  
+endmap
+
+map K11_plan_imrich.map
+  K11_11_im
+  break
+ K11_06_im_2
+ K11_06_im_1
+ break
+ K11_06_im
+endmap
+
+map K11_plan_holubek.map
+K11_11_im_1
+break
+K11_05_S1
+endmap
+
+map K11_plan_07_szunyog.map
+  K11_s7_01
+  K11_s7_02a
+    break
+  K11_s7_02
+  K11_s7_03
+  K11_s7_04
+  
+  #K11_06_im_1
+  #  break
+  #K11_06_im
+endmap
+
+map K11_plan_08_holubek.map
+  K11_08_plan_s1
+  K11_08_plan_s2
+  K11_08_plan_s2a
+  K11_08_plan_s3
+  K11_08_plan_s4
+endmap
+
+map K11_plan_09_smoll.map
+  K11_09_s1
+  endmap
+  
+map K11_plan_10_imrich.map
+  K11_10_im_1
+  break
+  K11_10_im
+endmap
+
+map K11_plan_12_smoll.map -projection plan
+  K11_12_plan_s2
+  K11_12_plan_s3
+  break
+  K11_12_plan_s1
+endmap
+
+map K11_plan_13_planki.map -projection plan
+  K11_13_planki_plan_s1
+endmap
+
+map  K11_plan_14_herich.map -projection plan
+slov_3
+break
+slov_2
+break
+slov_1
+endmap
+
+map K11_plan_15_komin_nad_peoni_plan.map
+    k11_15_plan_s1
+endmap
+
+map k11_16_plan_20140909_pokrievka_plan.map
+    k11_20140909_pokrievka_plan_s1
+endmap
+
+map imrich.map 
+im17_1
+break
+im17_2
+endmap
+
+map pokrievka.map 
+scrap1
+endmap
+
+map k11_19_hercut.map
+K11_19_hercut_plan_s1
+endmap
+
+map map_k11_plan.map #-title "Slovaka jama na Karadìici (CEKI1)"
+    K11_plan_13_planki.map
+    k11_16_plan_20140909_pokrievka_plan.map
+    break
+    K11_plan_14_herich.map
+    
+    break
+    K11_plan_szunyog.map
+    K11_plan_15_komin_nad_peoni_plan.map
+    break
+    K11_plan_holubek.map
+    K11_plan_07_szunyog.map
+    K11_plan_imrich.map
+    K11_plan_08_holubek.map
+    break
+    K11_plan_09_smoll.map
+    K11_plan_10_imrich.map
+    break
+    K11_plan_12_smoll.map
+endmap
+

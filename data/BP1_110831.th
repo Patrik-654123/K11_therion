@@ -1,0 +1,33 @@
+encoding  utf-8
+survey BP1
+
+input BP1.th2
+
+centerline
+date 2011.08.31
+team "Ján Vajs" pictures
+team "Ivan Demovič" instruments
+explo-date 2011.08.31 
+
+#pásmo, geologicky kompas 360
+
+infer plumbs on
+extend right
+
+units length m
+
+data normal from to length compass clino up down right left 
+
+   1    2  10.3   28   -72    -    -    2.5  5.5
+   2    3   3.38 130    22    -    0    3    4.8
+   3    4   7.86 320     0.4  [- -] [1.8 .2] [4 .8] [1.2 1.1]
+   3    5   4.48 224   -42    0.1  0.2  0.6  1.5 
+endcenterline
+endsurvey
+
+map bp1
+bp1_s2@BP1
+break
+bp1_s1@BP1
+endmap
+

@@ -1,0 +1,55 @@
+encoding  utf-8
+survey K11
+
+input K11_06_imrich_080910.th
+input K11_07_szunyog_080911.th
+
+input K11_07_01.th2
+input K11_07_02.th2
+input K11_07_03.th2
+input K11_07_04.th2
+
+input K11_ext_07_01.th2
+input K11_ext_07_02.th2
+input K11_ext_07_03.th2
+input K11_ext_07_04.th2
+
+input K11_06_im_plan.th2
+input K11_06_im_ext.th2
+
+equate 31@K11_06 39@K11_07
+
+join K11_s7_01 K11_s7_02
+join K11_s7_02 K11_s7_03
+join K11_s7_03 K11_s7_04
+join K11_s7_04 K11_06_im
+
+join K11_ext_s7_01 K11_ext_s7_02
+join K11_ext_s7_02 K11_ext_s7_03
+join K11_ext_s7_03 K11_ext_s7_04
+join K11_ext_s7_04 K11_06_im_ext
+
+map K11_plan
+  K11_s7_01
+  K11_s7_02a
+    break
+  K11_s7_02
+  K11_s7_03
+  K11_s7_04
+  
+  K11_06_im_1
+    break
+  K11_06_im
+endmap
+
+map K11_extend
+  K11_ext_s7_01
+  K11_ext_s7_02
+  K11_ext_s7_03
+  K11_ext_s7_04
+  
+  K11_06_im_ext
+endmap
+
+endsurvey
+

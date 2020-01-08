@@ -1,0 +1,19 @@
+encoding  utf-8
+
+source data/K11.th
+
+input layouts/layout_ext
+select map_K11_ext.map@K11 #celý rez
+
+#select map_k11_plan@K11 #celá mapa
+#select K11_plan_holubek@K11
+#select K11_plan_imrich@K11
+
+#export map -o output/k11_debug.pdf #-layout-debug on
+#export map -o output/k11.pdf -layout my_layout #-layout-debug on
+#export map -o output/k11_debug.xvi
+export map -projection extended -o output/k11_ext_20180303bw.pdf -layout my_layout_ext #-layout-base-scale 1 200 #-layout-debug on
+#export map -o output/k11_cont.pdf -layout continuations #-layout-debug on
+#export survey-list -o output/survey_list.html
+#export continuation-list -o output/continuations.html
+#export model -o output/k11.lox

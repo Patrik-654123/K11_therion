@@ -1,0 +1,31 @@
+encoding  utf-8
+join K11_s1 K11_s2
+join K11_s2 K11_s4_2007
+join K11_s3 K11_s3_2007
+join K11_s3 K11_s4_02
+join K11_s4_02 K11_s4_01
+join K11_05_S1 K11_06_im
+join K11_s4_01 K11_05_S1
+join K11_s7_01 K11_s7_02
+join K11_s7_02 K11_s7_03
+join K11_s7_03 K11_s7_04
+join K11_s7_04 K11_06_im
+join K11_06_im_2 K11_06_im -count 2
+join K11_09_s1 K11_10_im
+join K11_08_plan_s1 K11_08_plan_s4
+join K11_10_im K11_08_plan_s1
+join K11_10_im_1 K11_08_plan_s1
+join K11_08_plan_s3 K11_08_plan_s2a
+join K11_08_plan_s3 K11_08_plan_s4
+join K11_08_plan_s2 K11_08_plan_s2a
+join K11_s7_01 K11_08_plan_s2 -count 2
+join K11_11_im K11_11_im_1
+join K11_12_plan_s1 K11_12_plan_s2 -count 2
+join K11_12_plan_s1 K11_12_plan_s3
+join K11_12_plan_s1 K11_13_planki_plan_s1
+join l1:j1 l11:j11
+join l2:j2 l21:j21
+join K11_08_plan_s2a im17_1
+join im17_1 scrap1
+join scrap1 K11_19_hercut_plan_s1
+

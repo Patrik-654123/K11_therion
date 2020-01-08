@@ -1,0 +1,20 @@
+encoding  utf-8
+source data/K11.th
+
+input layouts/layout_ext_clanok
+
+input ./layouts/LayoutScale2_Thomas_Holder.thc
+
+#select map_k11_plan@K11 #celá mapa
+#select K11_plan_holubek@K11
+#select K11_plan_imrich@K11
+
+#export map -o output/k11_debug.pdf #-layout-debug on
+#export map -o output/k11.pdf -layout my_layout #-layout-debug on
+#export map -o output/k11_debug.xvi
+#export map -projection extended -o output/k11_ext_x.pdf -layout my_layout_ext #-layout-debug on
+export map -projection extended -o output/k11_ext_clanok_2012.pdf -layout my_layout_ext_clanok #-layout-debug on
+#export map -o output/k11_cont.pdf -layout continuations #-layout-debug on
+#export survey-list -o output/survey_list.html
+#export continuation-list -o output/continuations.html
+#export model -o output/k11.lox

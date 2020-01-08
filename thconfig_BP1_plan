@@ -1,0 +1,16 @@
+encoding  utf-8
+
+source data/BP1_110831.th
+
+select BP1
+
+#input layouts/layout_plan
+#input layouts/layout_ext
+
+#export map -o output/k11_debug.pdf #-layout-debug on
+export map -o output/BP1.pdf -layout my_layout -layout-language sk -layout-debug station-names
+#export map -o output/BP1.xvi
+#export map -projection extended -o output/k11_ext_sk.pdf -layout my_layout_ext -layout-language sk #-layout-debug on
+#export map -o output/k11_cont.pdf -layout continuations #-layout-debug on
+#export continuation-list -o output/continuations_2.html
+#export model -o output/BP1_2011.lox

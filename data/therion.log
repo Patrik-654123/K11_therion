@@ -1,0 +1,7 @@
+therion 5.4.3 (2019-02-01)
+initialization file: C:\Program Files (x86)\Therion/therion.ini
+reading ... done
+configuration file: thconfig_k11_20140909_pokrievka
+reading ...
+C:\Program Files (x86)\Therion\therion.exe: error -- thconfig_k11_20140909_pokrievka [5] -- unknown option -- "extended"
+writing xtherion file ... done

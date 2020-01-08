@@ -1,0 +1,25 @@
+encoding  utf-8
+input ../data/K11_01_szunyog_071009.th
+input ../data/K11_02_szunyog_080907.th
+input ../data/K11_03_szunyog_080908.th
+input ../data/K11_03_szunyog_071012.th
+input ../data/K11_04_szunyog_080909.th
+input ../data/K11_05_holubek_080910.th
+input ../data/K11_06_imrich_080910.th
+input ../data/K11_07_szunyog_080911.th
+input ../data/K11_08_holubek_110829.th
+input ../data/K11_09_smoll_110831.th
+input ../data/K11_10_imrich_110831.th
+input ../data/K11_11_imrich_110901.th
+input ../data/K11_12_smoll_110901.th
+input ../data/K11_13_planki_120828.th
+input ../data/K11_14_herich_120828.th
+input ../data/K11_15_pokr_120831.th
+input ../data/k11_16_20140909_ppokrievka.th
+input ../data/k11_17_imrich.th
+input ../data/K11_18_pokrievka.th
+input ../data/K11_19_hercut.th
+
+#input ../data/K11_19_pokrievka.th
+#input ../data/K11_20_pokrievka.th
+

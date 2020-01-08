@@ -1,0 +1,11 @@
+encoding  utf-8
+
+layout my_layout_ext_clanok
+  scale 1 2000
+  
+  symbol-hide group all
+  symbol-show line wall
+  transparency off
+   color map-fg [0 0 0] #cierna
+ endlayout
+

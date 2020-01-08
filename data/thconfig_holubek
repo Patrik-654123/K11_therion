@@ -1,0 +1,4 @@
+encoding  utf-8
+source k11_05_holubek_080910.th
+
+export map -o output/holubek.xvi

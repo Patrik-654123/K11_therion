@@ -1,0 +1,197 @@
+encoding  utf-8
+layout my_layout_ext_1000
+  #map-comment "Objavili a preskúmali členovia speleoklubov Červené vrchy, Banská Bystrica, Detva, Drienka, Nicolaus, Šariš, UK Bratislava (Slovensko), Speleološko Društvo Peoni (Macedónsko) a Speleoklub Tatrzański  (Polsko)
+  #map-comment "Discovered and explored by members of speleo clubs Cervene vrchy, Banska Bystrica, Detva, Drienka, Nicolaus, Martin, UK Bratislava (Slovakia), Speleolosko Druzstvo Peoni (Macedonia) and Speleoklub Tatrzanski (Poland)
+overlap 5 cm
+  scale 1 1000
+  base-scale 1 500
+  symbol-hide point label 
+#  rotate 90
+#  origin 13 22 0 m
+#  origin-label 100 K
+#  exclude-pages on 1,2,5
+ # color map-bg [60 100 80] #zelenkavá
+  color map-bg [87 85 77] #hnedá
+  transparency on
+  surface bottom
+  surface-opacity 80
+#  opacity 90  
+  language en
+#  statistics topo-length on
+#  statistics explo-length on
+ legend off
+#  legend-width .18 m
+# map-header-bg on
+ map-header 0 0 off
+  grid bottom 
+ # grid-size 50 50 50 m
+ # grid-origin 0 0 0 m
+  grid-coords all #border
+  layers off
+  symbol-assign point station:temporary SKBB
+  #debug station-names
+  
+  symbol-color area water [0 0 100]
+  symbol-color area sump  [0 0 100] 
+  symbol-color line water-flow [0 0 100]
+  symbol-color point water-flow [0 0 100]
+
+  code metapost
+  def a_water (expr p) =
+    T:=identity;
+    thfill p withcolor (0.0, 0.5, 1.0);
+  enddef;
+
+code tex-map
+\legendwidth=20cm
+#\legendtextcolor={\color[0 0 100]}
+\legendtextsize={\size[16]}
+\legendtextheadersize={\size[40]}
+ 
+ \legendcontent={%
+  \hsize=\legendwidth
+  \color[0 0 0]\the\legendtextcolor
+%  \ifnortharrow\vbox to 0pt{\line{\hfil\northarrow}\vss}\fi
+  \edef\tmp{\the\cavename} \ifx\tmp\empty \else
+     {\the\legendtextheadersize\the\cavename}\vskip1cm
+  \fi
+ % \ifscalebar\scalebar\vskip1cm\fi
+  {\rightskip=0pt plus 3em\parskip=3bp
+    \edef\tmp{\the\comment} \ifx\tmp\empty \else
+      {\the\legendtextsize\the\comment} \par\medskip
+    \fi
+    \everypar{\hangindent=2em\hangafter=1}
+    \edef\tmp{\the\cavelength} \ifx\tmp\empty \else
+      {\the\legendtextsize\si\the\cavelengthtitle: \ss\the\cavelength\par}
+    \fi
+    \edef\tmp{\the\cavedepth} \ifx\tmp\empty \else
+      {\the\legendtextsize\si\the\cavedepthtitle: \ss\the\cavedepth\par}
+    \fi
+    \edef\tmp{\the\exploteam} \ifx\tmp\empty \else
+      {\the\legendtextsize\si\the\explotitle:
+\ss\the\exploteam\quad\si\the\explodate\par}
+    \fi
+    \edef\tmp{\the\topoteam} \ifx\tmp\empty \else
+      {\the\legendtextsize\si\the\topotitle:
+\ss\the\topoteam\quad\si\the\topodate\par}
+    \fi
+    \edef\tmp{\the\cartoteam} \ifx\tmp\empty \else
+      {\the\legendtextsize\si\the\cartotitle:
+\ss\the\cartoteam\quad\si\the\cartodate\par}
+    \fi
+    \edef\tmp{\the\copyrights} \ifx\tmp\empty \else
+      {\the\legendtextsize\ss\the\copyrights\par}
+    \fi
+  }
+  \formattedlegend
+  \color[0 0 0]
+}
+
+\def\maplayout{
+  \legendbox{10}{105}{sW}{\the\legendcontent}
+  \legendbox{80}{80}{N}{\scalebar}
+}
+
+#code metapost
+# def s_northarrow (expr rot) =
+#   T:=identity scaled 1.5 rotated -rot;
+#   thdraw (-.5cm,-1cm)--(0,1.5cm)--(.5cm,-1cm)--(0,-.5cm)--cycle;
+#   thfill (-.5cm,-1cm)--(0,1.5cm)--(0,-.5cm)--cycle;
+ #enddef;
+#endcode
+
+code tex-map
+
+\def\legendbox#1#2#3#4{%
+  \unskip
+  \setbox\tmpboxa=\vbox{#4}%
+  \sx=\wd\tmpboxa
+  \sy=\ht\tmpboxa \advance\sy by \dp\tmpboxa
+  \sxd=\hsize \divide\sxd by 100 \sxd=#1\sxd
+  \syd=\vsize \divide\syd by 100 \syd=#2\syd
+  \edef\test{#3}%
+  \ifx\test\LEGN
+    \divide\sx by 2 \advance\sxd by -\sx
+                    \advance\syd by -\sy
+  \else\ifx\test\LEGW
+    \divide\sy by 2 \advance\syd by -\sy
+  \else\ifx\test\LEGE
+                    \advance\sxd by -\sx
+    \divide\sy by 2 \advance\syd by -\sy
+  \else\ifx\test\LEGS
+    \divide\sx by 2 \advance\sxd by -\sx
+  \else\ifx\test\LEGNW
+                    \advance\syd by -\sy
+  \else\ifx\test\LEGNE
+                    \advance\sxd by -\sx
+                    \advance\syd by -\sy
+  \else\ifx\test\LEGSW
+  \else\ifx\test\LEGSE
+                    \advance\sxd by -\sx
+  \else\ifx\test\LEGC
+    \divide\sx by 2 \advance\sxd by -\sx
+    \divide\sy by 2 \advance\syd by -\sy
+  \fi\fi\fi\fi\fi\fi\fi\fi\fi
+  %
+  \ifdim\sxd<-\extraW \global\extraW=-\sxd\fi
+  \ifdim\syd<-\extraS \global\extraS=-\syd\fi
+  \sx=\wd\tmpboxa
+  \sy=\ht\tmpboxa \advance\sy by \dp\tmpboxa
+  \advance\sx by \sxd \advance\sx by -\hsize
+  \advance\sy by \syd \advance\sy by -\vsize
+  \ifdim\sx>\extraE \global\extraE=\sx \fi
+  \ifdim\sy>\extraN \global\extraN=\sy \fi
+  %
+  \unskip
+%  \advance\sxd by \extraW  -- presunute do thpdf.cxx
+%  \advance\syd by \extraS
+
+  % vypln pod legendou
+  \iflegendbgfill
+   \begingroup
+     \advance\sxd-1cm
+     \advance\syd-1cm
+     \sx=\wd\tmpboxa \advance\sx by 2cm
+    \dimtobp{\sxd}\edef\shiftx{\tmpdef}%
+    \dimtobp{\syd}\edef\shifty{\tmpdef}%
+%    \dimtobp{\wd\tmpboxa}\edef\wdth{\tmpdef}%
+     \dimtobp{\sx}\edef\wdth{\tmpdef}%
+    \sy=\ht\tmpboxa \advance\sy by \dp\tmpboxa
+      \advance\sy by 2 cm
+    \dimtobp{\sy}\edef\hght{\tmpdef}%
+    \rlap{\PL{q \the\bgcolor\space rg \shiftx\space \shifty\space
+\wdth\space \hght\space re f Q}}%
+   \endgroup
+  \fi
+  %
+  \advance\syd by \dp\tmpboxa
+
+  \rlap{\kern\sxd\raise\syd\box\tmpboxa}%
+  \ignorespaces
+}
+
+\def\gridcoord#1#2{\hbox to0pt{%
+  \ifnum#1=1\hss\fi
+  \ifnum#1=4\hss\fi
+  \ifnum#1=7\hss\fi
+  \ifnum#1=8\hss\fi
+  \ifnum#1=2\hss\fi
+    \vbox to0pt{%
+      \ifnum#1>3\vss\fi
+      \kern2pt%
+      \hbox{\kern2pt{\font\a=cmr10 at 40pt\font\b=cmsy10 at
+40pt\textfont0=\a\textfont2=\b #2}\kern2pt}%
+      \kern2pt%
+      \ifnum#1<7\vss\fi
+    }%
+  \ifnum#1=3\hss\fi
+  \ifnum#1=6\hss\fi
+  \ifnum#1=9\hss\fi
+  \ifnum#1=8\hss\fi
+  \ifnum#1=2\hss\fi
+  }%
+}
+
+
+endlayout
+

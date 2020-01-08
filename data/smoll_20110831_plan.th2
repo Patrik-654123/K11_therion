@@ -1,0 +1,111 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -328 -359 1174 2128
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {597.402 1 1.0} {1128.051 imr5} ../output/k11_smoll_20110831.xvi 0 {}
+##XTHERION## xth_me_image_insert {-200 1 1.0} {2000 {}} {../scans/smoll 2011_2/smoll_20110831_plan.jpg} 0 {}
+
+
+
+scrap K11_09_plan_S1 -projection plan -scale [-128.0 -128.0 970.52014 -128.0 0.0 0.0 27.902411556 0.0 m]
+
+point 49.672 -52.899 station -name 3
+
+point 102.272 -8.879 station -name 0
+
+point 73.872 45.661 station -name 1
+
+point 28.612 2.731 station -name 2
+
+point -13.198 75.361 station -name 4
+
+point -81.758 185.201 station -name 5
+
+point -166.758 336.001 station -name 6
+
+point 76.752 436.711 station -name 7
+
+point 109.482 519.981 station -name 8
+
+point 210.572 510.051 station -name 10
+
+point 475.062 520.561 station -name 12
+
+point 325.0 563.0 station -name 14
+
+point 345.852 577.751 station -name 13
+
+point 355.852 605.321 station -name 14
+
+point 387.442 584.131 station -name 15
+
+point 444.562 631.971 station -name 16
+
+point 477.662 635.301 station -name 17
+
+point 504.732 731.931 station -name 18
+
+point 201.0 503.0 station -name 9
+
+point 452.722 772.931 station -name 19
+
+point 518.402 823.751 station -name 20
+
+point 524.532 832.471 station -name 21a
+
+point 576.752 800.541 station -name 21
+
+point 665.582 897.691 station -name 22
+
+point 698.102 878.231 station -name 23
+
+point 757.832 929.961 station -name 24
+
+point 840.612 1066.911 station -name 25a
+
+point 856.622 1002.621 station -name 25
+
+point 910.642 1123.611 station -name 26
+
+point 932.132 1143.371 station -name 27
+
+point 940.042 1157.471 station -name 28
+
+point 918.002 1234.181 station -name 29
+
+point 911.592 1310.331 station -name 30
+
+point 822.032 1310.531 station -name 31
+
+point 758.612 1364.101 station -name 32
+
+point 746.902 1385.881 station -name 33
+
+point 724.372 1409.741 station -name 32a
+
+point 644.542 1505.841 station -name 34
+
+point 707.322 1566.011 station -name 35
+
+point 716.182 1600.441 station -name 36
+
+point 652.632 1650.101 station -name 37
+
+point 601.672 1656.681 station -name 38
+
+point 565.152 1723.701 station -name 39
+
+point 535.332 1757.841 station -name 40
+
+point 616.302 1843.841 station -name 41
+
+point 668.0 1936.5 station -name  imr5
+
+point 651.0 1953.0 station -name 42
+
+point 673.632 1940.901 station -name 44
+
+point 682.242 1923.591 station -name 43
+
+endscrap
+
+

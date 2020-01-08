@@ -1,0 +1,22 @@
+encoding  utf-8
+source data/K11.th
+
+export model  -output ../MiddleEarth3DModel.kml
+export model -output ../MiddleEarth3DModel.lox
+export map -o output/slovacka2019_map.pdf -layout plan
+export map -o output/slovacka2019_ext.pdf -layout rozvinuty -proj extended
+
+
+layout plan
+scale 1 300
+color map-bg [80 70 50]
+#symbol-color area water [0 0 100]
+#symbol-color line water-flow [0 0 100]
+debug station-names
+endlayout
+
+layout rozvinuty
+scale 1 1000
+color map-fg [85 92 92]
+debug station-names
+endlayout

@@ -1,0 +1,1 @@
+C:\Users\imrich.SIZP.SK\AppData\Local\Therion\therion.exe: warning -- error deleting temporary directory -- C:\Users\IMRICH~1.SK\AppData\Local\Temp\th112

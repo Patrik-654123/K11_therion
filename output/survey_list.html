@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>survey_list</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script language="javascript">
+function xTree(node)
+{
+  var fsub = true;
+  var show = false;
+  var last = node.length;
+  var all = document.getElementsByTagName("tr");
+  for(i = 1; i < all.length; i++) {
+    if ((all[i].id.length > node.length) && (all[i].id.substr(0, node.length) == node)) {
+      if (fsub) {
+        fsub = false;
+        show = (all[i].style.display == "none");
+        last = all[i].id.lastIndexOf(".");
+      }
+      if (show) {
+        if (all[i].id.lastIndexOf(".") == last)
+        all[i].style.display = "";
+      } else {
+        all[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+<style type="text/css">
+body {font-family: Verdana, Helvetica, Arial, sans-serif; line-height: 1.5;}
+table {font-size:80%; border-spacing: 0px;}
+th {border-bottom:2px solid #a7a9aa; padding-left:8px; padding-right:8px; padding-top:0px; padding-bottom:1px;}
+td {border-bottom:1px solid #a7a9aa; padding-left:8px; padding-right:8px; padding-top:0px; padding-bottom:0px;}
+</style>
+</head>
+<body>
+<table>
+<tr><th align="left">Title</th><th align="right">Length</th><th align="right">Depth</th><th align="right">Explored</th><th align="right">Approx.</th><th align="right">Duplicate</th><th align="right">Surface</th><th align="right">Shots</th><th align="right">Stations</th></tr>
+<tr id="K11"><td align="left" style="padding-left:+0"><a href="javascript:xTree('K11')">Slovačka jama na Karadžici <br>(CEHI1)</a></td><td align="right">3609</td><td align="right">700</td><td align="right">0</td><td align="right">0</td><td align="right">20</td><td align="right">0</td><td align="right">534</td><td align="right">557</td></tr>
+<tr id="K11.K11_01"><td align="left" style="padding-left:+12">K11_01</td><td align="right">78</td><td align="right">62</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">6</td><td align="right">7</td></tr>
+<tr id="K11.K11_02"><td align="left" style="padding-left:+12">K11_02</td><td align="right">37</td><td align="right">29</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">4</td><td align="right">5</td></tr>
+<tr id="K11.K11_03"><td align="left" style="padding-left:+12">K11_03</td><td align="right">89</td><td align="right">79</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">6</td><td align="right">7</td></tr>
+<tr id="K11.K11_03_2007"><td align="left" style="padding-left:+12">K11_03_2007</td><td align="right">56</td><td align="right">49</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">6</td><td align="right">7</td></tr>
+<tr id="K11.K11_04"><td align="left" style="padding-left:+12">K11_04</td><td align="right">249</td><td align="right">198</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">20</td><td align="right">21</td></tr>
+<tr id="K11.K11_05"><td align="left" style="padding-left:+12">K11_05</td><td align="right">276</td><td align="right">76</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">37</td><td align="right">38</td></tr>
+<tr id="K11.K11_06"><td align="left" style="padding-left:+12">K11_06</td><td align="right">146</td><td align="right">32</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">31</td><td align="right">32</td></tr>
+<tr id="K11.K11_07"><td align="left" style="padding-left:+12">K11_07</td><td align="right">302</td><td align="right">52</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">38</td><td align="right">39</td></tr>
+<tr id="K11.K11_08"><td align="left" style="padding-left:+12">K11_08</td><td align="right">264</td><td align="right">38</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">50</td><td align="right">51</td></tr>
+<tr id="K11.K11_09"><td align="left" style="padding-left:+12">K11_09</td><td align="right">329</td><td align="right">79</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">49</td><td align="right">50</td></tr>
+<tr id="K11.K11_10"><td align="left" style="padding-left:+12">K11_10</td><td align="right">157</td><td align="right">33</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">34</td><td align="right">35</td></tr>
+<tr id="K11.K11_11"><td align="left" style="padding-left:+12">K11_11</td><td align="right">195</td><td align="right">35</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">37</td><td align="right">41</td></tr>
+<tr id="K11.K11_12"><td align="left" style="padding-left:+12">K11_12</td><td align="right">288</td><td align="right">35</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">46</td><td align="right">47</td></tr>
+<tr id="K11.K11_13"><td align="left" style="padding-left:+12">K11_13</td><td align="right">29</td><td align="right">18</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">6</td><td align="right">7</td></tr>
+<tr id="K11.K11_14"><td align="left" style="padding-left:+12">K11_14</td><td align="right">125</td><td align="right">31</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">12</td><td align="right">13</td></tr>
+<tr id="K11.K11_15"><td align="left" style="padding-left:+12">K11_15</td><td align="right">43</td><td align="right">42</td><td align="right">0</td><td align="right">0</td><td align="right">20</td><td align="right">0</td><td align="right">8</td><td align="right">9</td></tr>
+<tr id="K11.k11_20140909"><td align="left" style="padding-left:+12">k11_20140909</td><td align="right">63</td><td align="right">10</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">13</td><td align="right">14</td></tr>
+<tr id="K11.k11_17_imrich"><td align="left" style="padding-left:+12">k11_17_imrich</td><td align="right">264</td><td align="right">35</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">41</td><td align="right">42</td></tr>
+<tr id="K11.K11_18_pokrievka"><td align="left" style="padding-left:+12">K11_18_pokrievka</td><td align="right">249</td><td align="right">82</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">39</td><td align="right">40</td></tr>
+<tr id="K11.K11_19_hercut"><td align="left" style="padding-left:+12">K11_19_hercut</td><td align="right">371</td><td align="right">71</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">51</td><td align="right">52</td></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,110 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 2238.23736 1253.98486
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {194.52 1 1.0} {196.289 0} ../output/k11_ext_smoll_20110831.xvi 0 {}
+
+
+
+scrap scrap1 -projection extended -scale [-128.0 -128.0 970.52014 -128.0 0.0 0.0 27.902411556 0.0 m]
+
+point 194.52 196.289 station -name 0
+
+point 230.28 212.959 station -name 1
+
+point 263.66 232.309 station -name 2
+
+point 294.0 251.0 station -name 5
+
+point 304.84 249.959 station -name 4
+
+point 375.2 266.849 station -name 5
+
+point 464.02 250.069 station -name 6
+
+point 600.09 250.069 station -name 7
+
+point 693.82 207.989 station -name 9
+
+point 645.4 228.939 station -name 8
+
+point 694.31 279.239 station -name 10
+
+point 843.98 372.009 station -name 12
+
+point 762.64 281.019 station -name 11
+
+point 775.69 424.529 station -name 13
+
+point 792.06 416.579 station -name 14
+
+point 814.66 421.219 station -name 15
+
+point 850.89 451.409 station -name 16
+
+point 870.0 466.609 station -name 17
+
+point 923.11 476.839 station -name 18
+
+point 957.09 471.389 station -name 19
+
+point 999.73 491.369 station -name 20
+
+point 1034.13 506.039 station -name 21
+
+point 1074.27 571.019 station -name 21a
+
+point 1102.01 505.919 station -name 22
+
+point 1119.1 523.129 station -name 23
+
+point 1157.32 524.929 station -name 24
+
+point 1217.56 506.519 station -name 24a
+
+point 1257.26 626.519 station -name 25a
+
+point 1223.24 551.169 station -name 25
+
+point 1289.89 539.169 station -name 26
+
+point 1305.97 529.549 station -name 27
+
+point 1314.07 539.999 station -name 28
+
+point 1355.03 551.439 station -name 29
+
+point 1395.18 551.089 station -name 30
+
+point 1440.85 529.599 station -name 31
+
+point 1514.93 506.029 station -name 32a
+
+point 1485.42 535.539 station -name 32
+
+point 1496.53 568.189 station -name 33
+
+point 1578.72 569.629 station -name 34
+
+point 1620.26 667.469 station -name 35
+
+point 1644.02 675.109 station -name 36
+
+point 1687.51 703.129 station -name 37
+
+point 1712.11 708.579 station -name 38
+
+point 1753.5 715.959 station -name 39
+
+point 1774.75 716.739 station -name 40
+
+point 1835.56 720.769 station -name 41
+
+point 1894.39 736.979 station -name 42
+
+point 1913.87 801.499 station -name 43
+
+point 1924.64 816.199 station -name imr5@k11_09
+
+endscrap
+
+

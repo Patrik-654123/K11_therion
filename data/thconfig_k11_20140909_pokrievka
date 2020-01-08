@@ -1,0 +1,5 @@
+encoding  utf-8
+
+source k11_16_20140909_ppokrievka.th
+
+export map -o tvarohova_ext.pdf -layout -projection extended

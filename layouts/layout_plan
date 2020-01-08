@@ -1,0 +1,149 @@
+encoding  utf-8
+layout my_layout
+   map-comment "Objavili a preskúmali členovia speleoklubov Červené vrchy, Banská Bystrica, Detva, Drienka, Nicolaus, Šariš, UK Bratislava (Slovensko), Speleološko Društvo Peoni (Macedónsko) a Speleoklub Tatrzański  (Polsko)
+#  map-comment "Discovered and explored by members of speleo clubs Červené vrchy, Banská Bystrica, Detva, Drienka, Nicolaus, Šariš, UK Bratislava (Slovakia), Speleološko Društvo Peoni (Macedonia) and Speleoklub Tatrzański (Poland)
+  overlap 2 cm
+  scale 1 500
+  base-scale 1 200
+
+ #% default values depend on scale; for 1:200 they are 7,8,10,12,14
+code metapost
+    fonts_setup(6,8,10,14,90);
+endcode
+
+
+#  symbol-hide point label 
+  rotate 90
+#  origin 13 22 0 m
+#  origin-label 100 K
+#  exclude-pages on 1,2,5
+#  color map-bg [60 100 80] #zelenkavá
+  color map-bg [65 55 40] #hnedá
+  transparency on
+  surface bottom
+  surface-opacity 80
+#  opacity 90  
+  language en
+#  statistics topo-length on
+#  statistics explo-length on
+  #legend on
+  #legend-width .18 m
+  map-header-bg on
+#  map-header 50 70 nw
+  grid bottom 
+  #grid-size 50 50 50 m
+  #grid-coords border
+  layers off
+  symbol-assign point station:temporary SKBB
+  debug station-names 
+  #survey-level 2
+  code metapost
+  symbol-color area water [0 0 100]
+  symbol-color area sump  [0 0 100] 
+  symbol-color line water-flow [0 0 100]
+  symbol-color point water-flow [0 0 100]
+
+  
+code tex-map
+\legendwidth=20cm
+#\legendtextcolor={\color[0 0 100]}
+\legendtextsize={\size[16]}
+\legendtextheadersize={\size[40]}
+ 
+ \legendcontent={%
+  \hsize=\legendwidth
+  \color[0 0 0]\the\legendtextcolor
+%  \ifnortharrow\vbox to 0pt{\line{\hfil\northarrow}\vss}\fi
+  \edef\tmp{\the\cavename} \ifx\tmp\empty \else
+     {\the\legendtextheadersize\the\cavename}\vskip1cm
+  \fi
+ % \ifscalebar\scalebar\vskip1cm\fi
+  {\rightskip=0pt plus 3em\parskip=3bp
+    \edef\tmp{\the\comment} \ifx\tmp\empty \else
+      {\the\legendtextsize\the\comment} \par\medskip
+    \fi
+    \everypar{\hangindent=2em\hangafter=1}
+    \edef\tmp{\the\cavelength} \ifx\tmp\empty \else
+      {\the\legendtextsize\si\the\cavelengthtitle: \ss\the\cavelength\par}
+    \fi
+    \edef\tmp{\the\cavedepth} \ifx\tmp\empty \else
+      {\the\legendtextsize\si\the\cavedepthtitle: \ss\the\cavedepth\par}
+    \fi
+    \edef\tmp{\the\exploteam} \ifx\tmp\empty \else
+      {\the\legendtextsize\si\the\explotitle:
+\ss\the\exploteam\quad\si\the\explodate\par}
+    \fi
+    \edef\tmp{\the\topoteam} \ifx\tmp\empty \else
+      {\the\legendtextsize\si\the\topotitle:
+\ss\the\topoteam\quad\si\the\topodate\par}
+    \fi
+    \edef\tmp{\the\cartoteam} \ifx\tmp\empty \else
+      {\the\legendtextsize\si\the\cartotitle:
+\ss\the\cartoteam\quad\si\the\cartodate\par}
+    \fi
+    \edef\tmp{\the\copyrights} \ifx\tmp\empty \else
+      {\the\legendtextsize\ss\the\copyrights\par}
+    \fi
+  }
+  \formattedlegend
+  \color[0 0 0]
+}
+
+\def\maplayout{
+  \legendbox{75}{65}{NW}{\the\legendcontent}
+  \legendbox{18.95}{90}{N}{\northarrow}
+  \legendbox{18.95}{80}{N}{\scalebar}
+}
+
+code metapost
+#Thomas Holder North Arrow 2
+
+  def s_northarrow (expr rot) =
+    begingroup
+      interim defaultscale:=0.7; % scale your north arrow here
+      T:=identity scaled defaultscale rotated -rot;
+      interim linecap:=squared;
+        interim linejoin:=rounded;
+      thfill (-.5cm,-.1cm)--(0,2.5cm)--(.5cm,-.1cm)--cycle;
+      pickup pencircle scaled (0.08cm * defaultscale);
+      thdraw (0,0)--(0,-2.5cm);
+      pickup pencircle scaled (0.16cm * defaultscale);
+      p:=(0.4cm,0.6cm);
+      thdraw ((p--(p yscaled -1)--(p xscaled -1)--(p scaled -1)) shifted (0,-1.0cm));
+      label.rt(thTEX("mg") scaled 1.6, (.6cm,-1.6cm)) transformed T;
+    endgroup;
+  enddef; 
+  
+  #Thomas Holder merítko 2
+ 
+     def s_scalebar (expr l, units, txt) =
+    begingroup
+      interim warningcheck:=0;
+      tmpl:=l / Scale * cm * units / 2;
+      tmpx:=l / Scale * cm * units / 5;
+      tmph:=5bp; % bar height
+    endgroup;
+    pickup PenC;
+    #Adjusted to make lines not stick out: 0.25*u/10,0 is half thickness of PenC
+    draw (-tmpl+0.25*u/10,0)--(tmpl-0.25*u/10,0);
+    draw (tmpl-0.25*u/10,-tmph)--(-tmpl+0.25*u/10,-tmph);
+    p:=(0,0)--(tmpx,0)--(tmpx,-tmph)--(0,-tmph)--cycle;
+    for i:=-2.5 step 2 until 2:
+      fill p shifted (i * tmpx,0);
+    endfor;
+    begingroup
+      interim labeloffset:=3.5bp;
+      for i:=0 step (l/5) until (l-1):
+        tmpx:=tmpl * (i * 2 / l - 1);
+        label.bot(thTEX(decimal (i)),(tmpx,-tmph));
+      endfor;
+      label.bot(thTEX(decimal (l) & "\thinspace" & txt),(tmpl,-tmph));
+      label.top(thTEX("Generované merítko 1 : " & decimal (Scale*100)),(0,0));
+    endgroup;
+  enddef;  
+endcode
+
+#enddef;
+ 
+ endlayout
+

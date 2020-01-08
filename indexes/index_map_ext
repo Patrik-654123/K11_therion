@@ -1,0 +1,120 @@
+encoding  utf-8
+map K11_extend_07_szunyog -projection extended
+  K11_ext_s7_01
+  K11_ext_s7_02
+  K11_ext_s7_03
+  K11_ext_s7_04
+endmap
+
+map K11_extend_szunyog -projection extended
+  K11_ext_s1
+  K11_ext_s2
+  K11_ext_s3
+  break
+  K11_ext_s3_2007
+  K11_ext_s4_02
+  K11_ext_s4_01b
+  K11_ext_s4_01a
+endmap
+
+map K11_extend_imrich -projection extended
+  K11_06_im_ext
+endmap
+
+map K11_extend_holubek -projection extended
+  K11_05_ext_S1
+  break
+  K11_11_ext_im_1
+endmap
+
+map K11_08_extend_holubek -projection extended
+  K11_08_hol_ext_s5a
+  K11_08_hol_ext_s5
+  break
+  K11_08_hol_ext_s1a
+  K11_08_hol_ext_s1
+  K11_08_hol_ext_s2
+  K11_08_hol_ext_s3
+  K11_08_hol_ext_s4
+ endmap
+
+map K11_09_extend_smoll -projection extended
+  K11_09_ext_s1
+endmap
+
+map K11_10_extend_imrich -projection extended
+  K11_10_ext_im_3
+  break
+  K11_10_ext_im_1
+  K11_10_ext_im_2
+endmap
+
+map K11_12_extend_smoll -projection extended
+  K11_12_smoll_ext_s4
+  break
+  K11_12_smoll_ext_s2
+  break
+  K11_12_smoll_ext_s1
+  break
+  K11_12_smoll_ext_s3
+endmap
+
+map K11_13_extend_planki -projection extended
+  K11_13_planki_ext_s1
+endmap
+
+map K11_14_extend_herich -projection extended
+  slovB_1
+endmap
+
+map K11_15_extend_komin_nad_peoni_ext.map -projection extended
+    k11_15_ext_s1
+endmap
+
+map k11_16_20140909_ppokrievka_ext.map -projection extended
+    k11_20140909_ppokrievka_ext_s1
+    break
+    k11_20140909_ppokrievka_ext_s2
+endmap
+
+map K11_17_extend_imrich.map -projection extended
+    im17_ext1
+    im17_ext2
+    im17_ext3
+    im17_ext5
+    break
+    im17_ext4
+endmap
+
+map K11_18_extend_pokrievka.map -projection extended
+    scrap1
+endmap
+
+map k11_19_extend_hercut.map -projection extended
+    k11_19_hercut_ext_s1
+endmap
+
+
+map map_K11_ext.map -projection extended
+K11_15_extend_komin_nad_peoni_ext.map
+break
+K11_extend_szunyog
+break
+K11_extend_holubek
+K11_extend_07_szunyog
+K11_extend_imrich
+K11_12_extend_smoll
+K11_17_extend_imrich.map
+
+break
+K11_08_extend_holubek
+K11_10_extend_imrich
+K11_09_extend_smoll
+K11_13_extend_planki
+k11_16_20140909_ppokrievka_ext.map
+break
+K11_14_extend_herich
+break
+K11_18_extend_pokrievka.map
+k11_19_extend_hercut.map
+endmap

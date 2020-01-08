@@ -1,0 +1,24 @@
+encoding  utf-8
+
+source data/K11.th
+
+input layouts/layout_plan_1000
+input layouts/layout_ext_1000
+
+#select K11
+
+select K11_plan_15_komin_nad_peoni_plan.map@K11
+
+#or for survey:
+
+select K11_10.K11
+
+
+#export map -o output/k11_debug.pdf #-layout-debug on
+export map -o output/k11_20130720_1000.pdf -layout my_layout_1000 -layout-language en #-layout-color map-fg scrap #-layout-debug scrap-names #
+#export map -o output/k11_debug.xvi
+export map -projection extended -o output/k11_ext_20130720_1000.pdf -layout my_layout_ext_1000 -layout-language en -layout-map-header 0 0 off #-layout-debug on
+#export map -o output/k11_cont.pdf -layout continuations #-layout-debug on
+#export continuation-list -o output/continuations_2.html
+#export model -o output/k11_2011.lox
+#export database -format sql -o output/k11.sql

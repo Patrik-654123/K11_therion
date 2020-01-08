@@ -1,0 +1,26 @@
+encoding  utf-8
+input ../data/K11_01.th2
+input ../data/K11_02.th2
+input ../data/K11_03_2007.th2
+input ../data/K11_03.th2
+input ../data/K11_04_02.th2
+input ../data/K11_04_01.th2
+input ../data/K11_05_plan_hol.th2
+input ../data/K11_06_plan_im.th2
+input ../data/K11_07_01.th2
+input ../data/K11_07_02.th2
+input ../data/K11_07_03.th2
+input ../data/K11_07_04.th2
+input ../data/K11_08_holubek_plan_110829.th2
+input ../data/K11_09_smoll_plan_110831.th2
+input ../data/K11_10_plan_im.th2
+input ../data/K11_11_plan_im.th2
+input ../data/K11_12_smoll_plan_110901.th2
+input ../data/K11_13_planki_plan_ext_120828.th2
+input ../data/K11_14_herich_plan_120828.th2
+input ../data/k11_15_pokr_plan_ext_120831.th2
+input ../data/k11_16_20140909_ppokrievka.th2
+input ../data/k11_im17_plan.th2
+input ../data/k11_18_pokrievka_plan.th2
+input ../data/k11_19_hercut_plan.th2
+

@@ -1,0 +1,16 @@
+encoding  utf-8
+source slovacka2019.th
+
+layout polygon
+color map-bg [60 60 60]
+grid bottom
+grid-coords border
+debug station-names 
+survey-level 1
+statistics topo-length on
+endlayout
+
+export map -o output/ceki1_polygon.pdf -layout polygon
+export map -projection extended -o output/ceki1_polygon_ext.pdf -layout polygon
+export map -projection [elevation 315] -o output/ceki1_polygon_elev.pdf -layout polygon
+#export model #output/ceki1_loch.lox

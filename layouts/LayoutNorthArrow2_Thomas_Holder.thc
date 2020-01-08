@@ -1,0 +1,25 @@
+encoding  utf-8
+
+#CODE TO MAKE WATER NORTH ARROW by Thomas Holder var. 2
+#-------------------------------------------------------
+
+layout NorthArrow_2
+code metapost
+ def s_northarrow (expr rot) =
+    begingroup
+      interim defaultscale:=0.7; % scale your north arrow here
+      T:=identity scaled defaultscale rotated -rot;
+      interim linecap:=squared;
+        interim linejoin:=rounded;
+      thfill (-.5cm,-.1cm)--(0,2.5cm)--(.5cm,-.1cm)--cycle;
+      pickup pencircle scaled (0.08cm * defaultscale);
+      thdraw (0,0)--(0,-2.5cm);
+      pickup pencircle scaled (0.16cm * defaultscale);
+      p:=(0.4cm,0.6cm);
+      thdraw ((p--(p yscaled -1)--(p xscaled -1)--(p scaled -1)) shifted (0,-1.0cm));
+      label.rt(thTEX("mg") scaled 1.6, (.6cm,-1.6cm)) transformed T;
+    endgroup;
+  enddef;
+endcode
+endlayout
+

@@ -1,0 +1,19 @@
+encoding  utf-8
+input LayoutNorthArrow2_Thomas_Holder.thc
+input LayoutScale2_Thomas_Holder.thc
+
+layout my_layout_clanok
+  map-comment "Objavili a preskúmali členovia speleoklubov Červené vrchy, Banská Bystrica, Detva, Drienka, Nicolaus, Šariš, UK Bratislava (Slovensko), Speleološko Društvo Peoni (Macedonsko) a Speleoklub Tatrzański  (Polsko)
+#  map-comment "Discovered and explored by members of speleo clubs Červené vrchy, Banská Bystrica, Detva, Drienka, Nicolaus, Šariš, UK Bratislava (Slovakia), Speleološko Društvo Peoni (Macedonia) and Speleoklub Tatrzański (Poland)
+  overlap 2 cm
+  scale 1 2000
+  symbol-hide group all
+  symbol-show line wall
+  transparency off
+  rotate 90
+  color map-fg [0 0 00] #cierna
+  copy Scale_2
+  copy NorthArrow_2
+ endlayout
+
+

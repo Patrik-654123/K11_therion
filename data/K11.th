@@ -1,0 +1,17 @@
+encoding  utf-8
+survey K11 -title "Slovačka jama na Karadžici <br>(CEHI1)"
+
+input ../indexes/index_th
+#input ../indexes/index_equate_ext
+input ../indexes/index_equate_plan
+#input ../indexes/index_join_ext
+input ../indexes/index_join_plan
+#input ../indexes/index_map_elev
+#input ../indexes/index_map_ext
+input ../indexes/index_map_plan
+#input ../indexes/index_th2_elev
+#input ../indexes/index_th2_ext
+input ../indexes/index_th2_plan
+
+endsurvey
+

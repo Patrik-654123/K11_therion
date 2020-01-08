@@ -1,0 +1,12 @@
+encoding  utf-8
+
+source ./data/K11_15_pokr_120831.th
+source ./data/k11_15_pokr_plan_ext_120831.th2
+
+select komin_nad_peoni_plan.map@K11_15
+
+
+export map -o ./output/komin_nad_peoni_plan.pdf -layout-debug station-names
+export map -projection extended -o ./output/komin_nad_peoni_ext.pdf -layout-debug station-names
+#export map -o ./output/komin_nad_peoni_plan.xvi -layout-rotate 180
+#export map -projection extended -o ./output/komin_nad_peoni_ext.xvi

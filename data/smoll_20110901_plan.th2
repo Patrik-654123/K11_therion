@@ -1,0 +1,106 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 718.5515 923.27602
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {167.864 1 1.0} {719.393 sz_2008_20} ../output/k11_smoll_20110901.xvi 0 {}
+
+
+
+scrap scrap1 -scale [-128.0 -128.0 970.52014 -128.0 0.0 0.0 27.902411556 0.0 m]
+
+point 248.414 386.083 station -name 8
+
+point 246.254 426.233 station -name 7
+
+point 269.764 470.233 station -name 6
+
+point 277.844 514.623 station -name 5
+
+point 306.544 494.213 station -name 5a
+
+point 255.884 87.073 station -name 31
+
+point 211.574 152.313 station -name 30
+
+point 190.684 166.673 station -name 29
+
+point 168.924 163.623 station -name 28a
+
+point 181.844 186.363 station -name 28
+
+point 156.694 221.903 station -name 27
+
+point 118.654 242.843 station -name 24a
+
+point 145.214 258.343 station -name 26
+
+point 93.434 278.443 station -name 25
+
+point 134.234 298.603 station -name 24
+
+point 120.384 319.933 station -name 23a
+
+point 140.644 347.903 station -name 23
+
+point 138.034 375.613 station -name 10
+
+point 171.724 372.303 station -name 9
+
+point 153.174 432.083 station -name 11a
+
+point 154.194 373.053 station -name 11
+
+point 175.224 362.333 station -name 12
+
+point 194.254 309.983 station -name 15
+
+point 220.234 338.323 station -name 14
+
+point 207.754 377.703 station -name 13
+
+point 196.184 414.883 station -name 16
+
+point 162.404 431.523 station -name 17
+
+point 165.464 467.133 station -name 18
+
+point 171.114 495.113 station -name 19
+
+point 172.134 543.143 station -name 20
+
+point 210.584 530.793 station -name 21
+
+point 256.684 536.683 station -name 22
+
+point 252.644 589.283 station -name 22a
+
+point 167.864 719.393 station -name sz_2008_20
+
+point 210.284 664.283 station -name 1
+
+point 190.204 597.423 station -name 2
+
+point 206.834 547.373 station -name 3
+
+point 278.094 538.733 station -name 4
+
+point 294.644 567.953 station -name 32
+
+point 355.584 544.303 station -name 33
+
+point 372.534 542.423 station -name 34
+
+point 391.294 507.723 station -name 35
+
+point 430.414 522.263 station -name 36
+
+point 481.694 556.253 station -name 37a
+
+point 460.594 569.243 station -name 37
+
+point 474.244 601.073 station -name 38
+
+point 519.974 567.213 station -name 39
+
+endscrap
+
+
